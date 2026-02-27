@@ -1,7 +1,6 @@
 Unit_Consumed=int(input("Enter the unit consumed: "))
 if Unit_Consumed>=100:
     rateperunit=5
-    total_Bill=Unit_Consumed*rateperunit
 elif Unit_Consumed>100 and Unit_Consumed<=200:
     rateperunit=7
 
