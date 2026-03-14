@@ -9,6 +9,6 @@ elif Unit_Consumed>200 and Unit_Consumed<=300:
 elif Unit_Consumed>300:
     rateperunit=15
 total_Bill = Unit_Consumed * rateperunit
-print("The unit consumed is ", Unit_Consumed, " rate per unit: ", rateperunit, " total bill: ", total_Bill)
+print("The unit consumed is : ", Unit_Consumed, " rate per unit: ", rateperunit, " total bill: ", total_Bill)
 
 
