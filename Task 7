@@ -1,0 +1,10 @@
+fruits = ["Apple","Orange","grape"]
+print(fruits)
+fruits.append("banana")
+print(fruits)
+fruits.remove("banana")
+print(fruits)
+print(fruits[0])
+print("orange "in fruits)
+for fruit in fruits:
+    print(fruit)
