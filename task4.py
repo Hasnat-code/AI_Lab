@@ -1,9 +1,8 @@
-number = int(input("Enter a number to reverse: "))
-reverse = 0
+# Assuming the A* logic from Task 3, the output formatting is:
+def display_task_4(path, cost):
+    print("\n--- Task 4 Format ---")
+    print(f"Path: {path}") # e.g., ['A', 'C', 'E', 'G']
+    print(f"Cost: {cost}")
 
-while number != 0:
-    number1 = number % 10
-    reverse = int(reverse * 10 + number1)
-    number = number // 10
-
-print("The reverse is", reverse)
+# Example Call:
+display_task_4(['A', 'C', 'E', 'G'], 6)
