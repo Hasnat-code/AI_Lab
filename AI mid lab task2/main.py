@@ -1,16 +1,23 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def dfs(graph,start):
+    visited=set()
+    stack=[start]
+    while stack:
+        node=stack.pop()
+        if node not in visited:
+            visited.add(node)
+            print(node," ",end=" ")
+            for neighbour in graph[node]:
+                if neighbour not in visited:
+                    stack.append(neighbour)
+graph={
+    "A":["B","C"],
+    "B":["D","E"],
+    "C":["F","G"],
+    "D":["H"],
+    "E":["I"],
+    "G":[],
+    "F":[],
+    "I":[],
+    "H":[]
+}
+dfs(graph,"A")
